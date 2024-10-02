@@ -4,4 +4,3 @@ for i in li:
     total += i
 
 print(total)
- 
