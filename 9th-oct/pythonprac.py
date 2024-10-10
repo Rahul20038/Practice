@@ -1,3 +1,4 @@
+#Largest and Smallest num
 def larsmall(arr):
     if not arr:
         print("array is empty")
@@ -12,5 +13,6 @@ def larsmall(arr):
 
 arr = [3,4,5,6,2,7,8,9]
 smallest, largest = larsmall(arr)
-print("smallest number is :",smallest )
+print("smallest number is :",smallest)
 print("largest number is :", largest)
+
