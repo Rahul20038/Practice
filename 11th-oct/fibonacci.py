@@ -7,16 +7,6 @@ class Fib():
         while len(fib_seq) < self.number:
             fib_seq.append(fib_seq[-1] + fib_seq[-2])
         return fib_seq
-    def fib_reccur(self):
-        if self.number <= 0 :
-            return[]
-        elif self.number == 1:
-            return[0]
-        elif self.number == 2:
-            return[0,1]
-        fib_se = fib_reccur(self - 1)
-        fib_se.append(fib_se[-1] + fib_se[-2])
-        return fib_se
     def fib3(self):
         a,b = 0,1
         fib3 = []
@@ -27,6 +17,8 @@ class Fib():
 
 fib1 = Fib(10)
 print(fib1.fibonacci_num())
+fib2 = Fib(20)
+print(fib2.fib3())
 
 
 
