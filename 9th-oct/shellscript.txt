@@ -1,0 +1,13 @@
+1) echo can be used as a print statement in shell scripting
+2)# comment
+examples:
+aws s3 ls (list s3 buckets)
+
+aws ec2 describe-instances (shows the instances)
+
+aws lambda list-functions (list lambda)
+
+aws iam list-users(lists iam users)
+
+
+# set -x can be used to debug script
