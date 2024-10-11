@@ -17,7 +17,7 @@ class Fib():
 
 fib1 = Fib(10)
 print(fib1.fibonacci_num())
-fib2 = Fib(20)
+fib2 = Fib(15)
 print(fib2.fib3())
 
 
