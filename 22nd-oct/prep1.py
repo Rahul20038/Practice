@@ -1,2 +1,2 @@
 #selection sort algorithm
-list = []
+list = [5,5,4,4]
