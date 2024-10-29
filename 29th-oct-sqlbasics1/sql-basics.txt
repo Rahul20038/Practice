@@ -1,0 +1,77 @@
+SQL (structured query language) -- A language used to interact with databases. It allows for data manipulation and retrieval.
+    Database: A collection of related data organized for easy access, management, and updating.
+    Table: The fundamental structure in SQL to store data in rows and columns.
+
+Data Types
+SQL supports various data types for columns in tables, including:
+
+    INT: Stores integers.
+    VARCHAR(n): Stores variable-length strings, with a max length of n.
+    CHAR(n): Stores fixed-length strings.
+    DATE: Stores date values.
+    FLOAT/DOUBLE: Stores decimal numbers.
+    BOOLEAN: Stores TRUE or FALSE values.
+
+SQL Commands:
+SQL commands are broadly divided into four main categories:
+    DDL(Data Defenition Language): These commands define and manage table structures.
+    -->  CREATE (Creates a new table or database.)
+        CREATE TABLE Employees (
+        ID INT,
+        Name VARCHAR(50),
+        Age INT,
+        Salary FLOAT
+        );
+    --> ALTER (Modifies an existing table by adding, deleting, or modifying columns.)
+        ALTER TABLE Employees ADD Department VARCHAR(50);
+        ALTER TABLE Employees DROP COLUMN Age;
+
+    --> DROP (Deletes a table or database.)
+        DROP TABLE Employees;
+        DROP DATABASE CompanyDB;
+
+    --> TRUNCATE (Removes all records from a table, keeping the table structure intact.)
+        TRUNCATE TABLE Employees;
+    
+    DML(Data manipulation Language) : these commands deal with data manipulation within tables.
+    --> INSERT: Adds new records to a table.
+        INSERT INTO Employees (ID, Name, Age, Salary) VALUES (1, 'Alice', 30, 50000);
+
+    --> UPDATE: Modifies existing records in a table.
+        UPDATE Employees SET Salary = 55000 WHERE ID = 1;
+
+    --> DELETE: Deletes records from a table.
+        DELETE FROM Employees WHERE Age < 25;
+
+    Data Query Language (DQL): The primary command in DQL is SELECT, used to query data from the database.
+    --> SELECT: Retrieves data from one or more tables.
+        SELECT * FROM Employees;
+        SELECT Name, Salary FROM Employees WHERE Age > 25;
+    --> Clauses with SELECT:
+
+        WHERE: Filters records based on conditions.
+        ORDER BY: Sorts results by columns.
+        GROUP BY: Groups results by one or more columns.
+        HAVING: Filters groups based on conditions (used with GROUP BY)    
+
+        SELECT Department, AVG(Salary) 
+        FROM Employees 
+        GROUP BY Department 
+        HAVING AVG(Salary) > 30000;
+
+    Data Control Language (DCL): DCL commands are used to control access to data in a database.
+    --> GRANT: Gives users access privileges.
+        GRANT SELECT, INSERT ON Employees TO 'username';
+
+    --> REVOKE: Removes access privileges from users.
+        REVOKE INSERT ON Employees FROM 'username';
+
+
+
+
+
+
+
+
+
+
