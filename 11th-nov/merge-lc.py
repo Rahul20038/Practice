@@ -15,9 +15,9 @@ def merge_sorted_array(nums1, nums2, m, n):
             y -=1
     return nums1
 
-nums1 = [1,2,3,0,0,0]
-nums2 = [1,5,6]
+nums1 = [1,2,3,0,0,0,0,0]
+nums2 = [1,5,6,7,9]
 m = 3  #count how many valid elements in nums1
-n = 3  #count how many valid elements in nums2
+n = 5  #count how many valid elements in nums2
 merged_array = merge_sorted_array(nums1, nums2, m, n)
 print(merged_array)
