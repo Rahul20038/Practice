@@ -17,9 +17,9 @@ def merge_sorted(nums1, nums2, m, n):
             y -= 1
     return nums1
 
-nums1 = [2,3,6,0,0,0]
+nums1 = [2,3,6,0,0,0,0,0]
 m = 3
-nums2 = [9,6,8]
-n = 3
+nums2 = [9,1,9,1,1]
+n = 5
 merge_array = merge_sorted(nums1, nums2, m, n)
 print(merge_array)
